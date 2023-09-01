@@ -11,6 +11,8 @@ website:
         text: Home
       - href: syllabus.qmd
         text: Syllabus
+      - href: https://docs.google.com/spreadsheets/d/148AKHY_3sfFzWpG17-OkK2TiI5QiCSd9whtTZPhfKt0/edit?usp=sharing
+        text: Course Schedule
       - href: homework.qmd
         text: Homework
       - text: Trouble shooting links
