@@ -15,6 +15,8 @@ website:
         text: Course Schedule
       - href: homework.qmd
         text: Homework
+      - href: https://docs.google.com/document/d/13MWHuISh_i8Bj4jUWXJlyWMAq0ZbVjXN/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
+        text: Final Project Guide
       - text: Trouble shooting links
         menu:
         - href: https://smithcollege-sds.github.io/sds100/lab_01_setup.html
