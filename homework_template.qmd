@@ -1,0 +1,61 @@
+---
+title: "Homework Template"
+subtitle: "Scott LaCombe"
+format: pdf
+---
+
+You are free to use this document to help format your homework assignments, but don't forget to delete this text and change the name/title. If a question has multiple parts, put the main question with a single `#` and the sub-parts (a, b, etc) with 2 hashtags. The more hashtags, the smaller the subheading. To render to a pdf, you will need to go down to the tab labeled "terminal" and type 'quarto install tinytex' to that it can render to a pdf.
+
+# Question 0.6
+
+Type out text answers in the white space.
+
+```{r, warning=F, message=F}
+## Type code in this area (make sure to remove these lines, 
+# a # indicates it is a comment and not code) see example 
+# below for actual code (but delete it unless you need it)
+
+library(tidyverse)
+library(Stat2Data)
+```
+
+## .6a
+
+## .6b
+
+## .6c
+
+
+# 0.8
+
+## .8a
+
+## .8b
+
+## .8c
+
+## .8d
+
+## .8e
+
+## .8f
+
+# 0.9
+
+## .9a
+
+## .9b
+
+## .9c
+
+## .9d
+
+# 0.16
+
+## a
+
+## b
+
+## c
+
+## d
