@@ -27,7 +27,7 @@ website:
           href: https://smithcollege-sds.github.io/sds-www/rmarkdown_problems.html
       - text: Lecture Slides
         menu:
-        - href: https://docs.google.com/presentation/d/17X2-WU-jxfXnht2OOiITfnV6uOJ_3okk/edit?usp=drive_link&ouid=105141350110500354644&rtpof=true&sd=true
+        - href: https://docs.google.com/presentation/d/17X2-WU-jxfXnht2OOiITfnV6uOJ_3okk/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
           text: Intro Slides
       - text: Sample Code
         href: sample_code.qmd
