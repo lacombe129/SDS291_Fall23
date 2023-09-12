@@ -5,4 +5,4 @@ title: "Sample R Code"
 The following links will take you to R code and data used for class or lecture.
 
 # Week 2 - Simple Linear Regression
-1.  <i class="bi bi-download"></i> Download [simple_regression.qmd](https://drive.google.com/file/d/1L1tNpKcMumnlCdxaUBUoFXYeBlrvw9u5/view?usp=sharing)
+1. [simple_regression.qmd](https://drive.google.com/file/d/1L1tNpKcMumnlCdxaUBUoFXYeBlrvw9u5/view?usp=sharing)
