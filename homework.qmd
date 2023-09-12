@@ -3,7 +3,7 @@ title: "Homeworks"
 editor: visual
 ---
 
-All homeworks are due at 11:59 PM on the following Friday after they are assigned (all numbers indicate Stat2 exercises at the end of the chapter. Homeworks must be submitted as both a .RMD and .PDF. I've created a template you are free to download for homeworks following [this link](https://drive.google.com/file/d/1LF4cuvVVtX0KsNvQTVuvkAREP5EC-nON/view?usp=sharing). 
+All homeworks are due at 11:59 PM on the following Friday after they are assigned (all numbers indicate Stat2 exercises at the end of the chapter. Homeworks must be submitted as both a .RMD and .PDF. I've created a template you are free to download for homeworks following [this link](https://drive.google.com/file/d/1LF4cuvVVtX0KsNvQTVuvkAREP5EC-nON/view?usp=sharing).
 
 0.  Due Friday, September 15th:
     -   0.6, 0.8, , 0.9, 0.16
