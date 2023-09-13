@@ -1,5 +1,5 @@
 ---
-title: "Sample R Code"
+title: "Sample R Code and R Activities"
 ---
 
 The following links will take you to R code and data used for class or lecture.
@@ -7,3 +7,5 @@ The following links will take you to R code and data used for class or lecture.
 # Week 2 - Simple Linear Regression
 
 1.  [simple_regression.qmd](https://drive.google.com/file/d/1L1tNpKcMumnlCdxaUBUoFXYeBlrvw9u5/view?usp=sharing)
+
+2.  Due Sunday, Sept 17th by 11:59 PM on Moodle: [In-class R activity 1](https://drive.google.com/file/d/1M4NoNXXkWpIAi4TvpwvEw-QtvGynGV4p/view?usp=sharing)

@@ -31,8 +31,9 @@ website:
           text: Welcome Slides
         - href: https://docs.google.com/presentation/d/1DmSHbEVhmmIetIwcD3YCX54kqBj_26LS/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
           text: Week 2 Slides- Simple Regression
-      - text: Sample Code
+      - text: Sample Code and R- Activities
         href: sample_code.qmd
+
   
 
         
