@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Assignment #1</title>
+<title>SDS291 - R Assignment #1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,24 +57,164 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="activity_r_files/libs/clipboard/clipboard.min.js"></script>
-<script src="activity_r_files/libs/quarto-html/quarto.js"></script>
-<script src="activity_r_files/libs/quarto-html/popper.min.js"></script>
-<script src="activity_r_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="activity_r_files/libs/quarto-html/anchor.min.js"></script>
-<link href="activity_r_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="activity_r_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="activity_r_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="activity_r_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="activity_r_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
 
 
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS291</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html" rel="" target="">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://docs.google.com/spreadsheets/d/148AKHY_3sfFzWpG17-OkK2TiI5QiCSd9whtTZPhfKt0/edit?usp=sharing" rel="" target="">
+ <span class="menu-text">Course Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../homework.html" rel="" target="">
+ <span class="menu-text">Homework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://docs.google.com/document/d/13MWHuISh_i8Bj4jUWXJlyWMAq0ZbVjXN/edit?usp=sharing&amp;ouid=105141350110500354644&amp;rtpof=true&amp;sd=true" rel="" target="">
+ <span class="menu-text">Final Project Guide</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-trouble-shooting-links" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Trouble shooting links</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-trouble-shooting-links">    
+        <li>
+    <a class="dropdown-item" href="https://smithcollege-sds.github.io/sds100/lab_01_setup.html" rel="" target="">
+ <span class="dropdown-text">Downloading R and RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://smithcollege-sds.github.io/sds100/lab_04_wrangling.html" rel="" target="">
+ <span class="dropdown-text">Basics of Data Wranging in R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://smithcollege-sds.github.io/sds-www/rmarkdown_problems.html" rel="" target="">
+ <span class="dropdown-text">Troubleshooting Quarto</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lecture-slides" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Lecture Slides</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">    
+        <li>
+    <a class="dropdown-item" href="https://docs.google.com/presentation/d/1UEmngV8WZov1wvq02FtvjDwalBjIGdyv/edit?usp=sharing&amp;ouid=105141350110500354644&amp;rtpof=true&amp;sd=true" rel="" target="">
+ <span class="dropdown-text">Welcome Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://docs.google.com/presentation/d/1DmSHbEVhmmIetIwcD3YCX54kqBj_26LS/edit?usp=sharing&amp;ouid=105141350110500354644&amp;rtpof=true&amp;sd=true" rel="" target="">
+ <span class="dropdown-text">Week 2 Slides- Simple Regression</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../sample_code.html" rel="" target="">
+ <span class="menu-text">Sample Code and R- Activities</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#loading-packages" id="toc-loading-packages" class="nav-link" data-scroll-target="#loading-packages">Loading Packages</a></li>
+  <li><a href="#loading-data" id="toc-loading-data" class="nav-link" data-scroll-target="#loading-data">Loading Data</a></li>
+  <li><a href="#summary-statistics-of-key-variables" id="toc-summary-statistics-of-key-variables" class="nav-link" data-scroll-target="#summary-statistics-of-key-variables">Summary Statistics of Key variables</a>
+  <ul class="collapse">
+  <li><a href="#question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table" id="toc-question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table" class="nav-link" data-scroll-target="#question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table">Question 1: Use the sample chunk code above to calculate the descriptive statistics for the variable “Size” and include a brief write up interpreting the table</a></li>
+  </ul></li>
+  <li><a href="#histogram-of-key-variable" id="toc-histogram-of-key-variable" class="nav-link" data-scroll-target="#histogram-of-key-variable">Histogram of Key Variable</a>
+  <ul class="collapse">
+  <li><a href="#question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable." id="toc-question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable." class="nav-link" data-scroll-target="#question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable.">Question 2: Using the sample code above as a model, make a histogram of the size variable.</a></li>
+  </ul></li>
+  <li><a href="#linearity-condition" id="toc-linearity-condition" class="nav-link" data-scroll-target="#linearity-condition">Linearity condition</a>
+  <ul class="collapse">
+  <li><a href="#question-3--construct-a-scatter-plot" id="toc-question-3--construct-a-scatter-plot" class="nav-link" data-scroll-target="#question-3--construct-a-scatter-plot">Question 3- Construct a scatter plot</a></li>
+  </ul></li>
+  <li><a href="#linear-model" id="toc-linear-model" class="nav-link" data-scroll-target="#linear-model">Linear Model</a>
+  <ul class="collapse">
+  <li><a href="#question-4--estimate-a-linear-model" id="toc-question-4--estimate-a-linear-model" class="nav-link" data-scroll-target="#question-4--estimate-a-linear-model">Question 4- Estimate a linear Model</a></li>
+  <li><a href="#question-5--interpret-the-model" id="toc-question-5--interpret-the-model" class="nav-link" data-scroll-target="#question-5--interpret-the-model">Question 5- Interpret the Model</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#turn-in-report" id="toc-turn-in-report" class="nav-link" data-scroll-target="#turn-in-report">Turn in report</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -212,10 +352,11 @@ F-statistic: 0.005705 on 1 and 51 DF,  p-value: 0.9401</code></pre>
 <section id="turn-in-report" class="level1">
 <h1>Turn in report</h1>
 <p>Once you have finished, turn in your QMD file and rendered report onto Moodle.</p>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

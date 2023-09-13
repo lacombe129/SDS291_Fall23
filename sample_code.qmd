@@ -8,4 +8,4 @@ The following links will take you to R code and data used for class or lecture.
 
 1.  [simple_regression.qmd](https://drive.google.com/file/d/1L1tNpKcMumnlCdxaUBUoFXYeBlrvw9u5/view?usp=sharing)
 
-2.  Due Sunday, Sept 17th by 11:59 PM on Moodle: <i class="bi bi-download"></i> Download [this Quarto file](inclass_r/activity_r.qmd){download="activity_r.qmd"}
+2.  Due Sunday, Sept 17th by 11:59 PM on Moodle: Read and complete [this R-Activity #1](inclass_r/activity_r.html)
