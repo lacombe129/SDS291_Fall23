@@ -67,7 +67,7 @@ ggplot(HousesNY, aes(x=Lot, y=Price))+ geom_point() + geom_smooth(method="lm")
 
 ### Question 3- Construct a scatter plot
 
-Make a scatter plot between size and price. Include a line of best fit (make it linear). Include
+Make a scatter plot between size and price. Include a line of best fit (make it linear). Include a brief description of what you observe. Is the slope negative/positive? Does it look roughly linear? etc. 
 
 ## Linear Model
 
