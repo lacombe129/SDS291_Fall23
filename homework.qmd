@@ -13,5 +13,5 @@ All homeworks are due at 11:59 PM on the following Friday after they are assigne
     -   Q6: In your own words, what is the difference between the t-distribution and z (standard normal) and why does it matter for calculating p-values? -Q7: What is the null hypothesis for a simple regression?
 2.  Due Friday, September 29th
     -   1.4, 1.8, 1.10
-    -   1.16 (you will need to load the package `Stat2Data` in a chunk of code, plus include the code `data(Glow)` to pull up the dataset after loading the package)
+    -   1.16 (you will need to load the package `Stat2Data` in a chunk of code, plus include the code `data(GlowWorms)` to pull up the dataset after loading the package- note that the dataset name is wrong in the textbook use GlowWorms as the data name)
     - 1.18, 1.19
