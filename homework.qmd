@@ -16,8 +16,6 @@ All homeworks are due at 11:59 PM on the following Friday after they are assigne
     -   1.4, 1.8, 1.10
     -   1.16 (you will need to load the package `Stat2Data` in a chunk of code, plus include the code `data(GlowWorms)` to pull up the dataset after loading the package- note that the dataset name is wrong in the textbook use GlowWorms as the data name)
     -   1.18, 1.19
-3. Due Friday, October 6th
+3.  Due Friday, October 6th
     -   Regression practice- combined with in class R Time
-    -   Read and complete [this homework/r-activity](inclass_r/activity_r2.html)
-    
-    
+    -   Read and complete [R Activity for Homework 3](inclass_r/activity_r2.html)

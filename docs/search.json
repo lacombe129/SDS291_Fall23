@@ -74,7 +74,7 @@
     "href": "homework.html",
     "title": "Homeworks",
     "section": "",
-    "text": "All homeworks are due at 11:59 PM on the following Friday after they are assigned (all numbers indicate Stat2 exercises at the end of the chapter. Homeworks must be submitted as both a .RMD and .PDF. I’ve created a template you are free to download for homeworks following this link, but you are free to use your own.\n\nDue Friday, September 15th:\n\n0.6, 0.8, , 0.9, 0.16\n\nDue Friday, September 22nd:\n\n1.1, 1.3, 1.13, 1.14\nQ5: In your own words, describe what it means to have non-constant variance.\nQ6: In your own words, what is the difference between the t-distribution and z (standard normal) and why does it matter for calculating p-values?\nQ7: What is the null hypothesis for a simple regression?\n\nDue Friday, September 29th\n\n1.4, 1.8, 1.10\n1.16 (you will need to load the package Stat2Data in a chunk of code, plus include the code data(GlowWorms) to pull up the dataset after loading the package- note that the dataset name is wrong in the textbook use GlowWorms as the data name)\n1.18, 1.19\n\nDue Friday, October 6th\n\nRegression practice- combined with in class R Time\nRead and complete this homework/r-activity"
+    "text": "All homeworks are due at 11:59 PM on the following Friday after they are assigned (all numbers indicate Stat2 exercises at the end of the chapter. Homeworks must be submitted as both a .RMD and .PDF. I’ve created a template you are free to download for homeworks following this link, but you are free to use your own.\n\nDue Friday, September 15th:\n\n0.6, 0.8, , 0.9, 0.16\n\nDue Friday, September 22nd:\n\n1.1, 1.3, 1.13, 1.14\nQ5: In your own words, describe what it means to have non-constant variance.\nQ6: In your own words, what is the difference between the t-distribution and z (standard normal) and why does it matter for calculating p-values?\nQ7: What is the null hypothesis for a simple regression?\n\nDue Friday, September 29th\n\n1.4, 1.8, 1.10\n1.16 (you will need to load the package Stat2Data in a chunk of code, plus include the code data(GlowWorms) to pull up the dataset after loading the package- note that the dataset name is wrong in the textbook use GlowWorms as the data name)\n1.18, 1.19\n\nDue Friday, October 6th\n\nRegression practice- combined with in class R Time\nRead and complete R Activity for Homework 3"
   },
   {
     "objectID": "R_code/anova_code1.html",
@@ -243,5 +243,40 @@
     "title": "R Assignment #1",
     "section": "",
     "text": "We will get to the other conditions later, but for now we decide to estimate a linear model. The sample code below tells are to estimate a linear model (lm) with the dependent variable being Price, and independent variable Lot. We need to tell R to use our dataframe, and save the results into an object. When we summarize that object, we can see the regression table.\n\nmodel1 &lt;- lm(Price~Lot, data=HousesNY)\nsummary(model1)\n\n\nCall:\nlm(formula = Price ~ Lot, data = HousesNY)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-74.775 -30.201  -5.941  27.070  83.984 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 114.0911     8.3639  13.641   &lt;2e-16 ***\nLot          -0.5749     7.6113  -0.076     0.94    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 41.83 on 51 degrees of freedom\nMultiple R-squared:  0.0001119, Adjusted R-squared:  -0.01949 \nF-statistic: 0.005705 on 1 and 51 DF,  p-value: 0.9401\n\n\n\n\nUsing the sample code above, estimate a linear model between size and price and summarize the results.\n\n\n\nIs there a relationship between housing size and price? Note whether the relationship is positive or negative, and if the relationship is statistically signficant. Include a sentence interpeting the intercept, and one interpreting the coefficient for “size.” What can we conclude about the influence of house size on price?\nNote, pay careful attention to your units!"
+  },
+  {
+    "objectID": "inclass_r/activity_r2.html",
+    "href": "inclass_r/activity_r2.html",
+    "title": "In Class R Activity #2/HW 3",
+    "section": "",
+    "text": "The purpose of this lab is to practice evaluating the conditions for linear regression. We will be doing both post-and pre-estimation checks in addition to estimating a linear model.\nOn a side note, we need to get in the habit of hiding warnings and messages while properly formatting our quarto document. Your final submission must include a .QMD and rendered PDF that hides all warnings/messages.\nAll figures must include at least 1-2 sentences of write up explaining what we should take away from them for full points.\n\n\nWe need the following packages loaded: tidyverse, broom, and reader. As a reminder, you only need to install them once, otherwise you just need to load them by typing library(PACKAGENAME) in a chunk of code.\n\nlibrary(tidyverse)\nlibrary(readr)\nlibrary(broom)\n\nWe are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a high school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.\n\nurlfile &lt;- \"https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/inclass_r/life_exp.csv\"\n\ndf&lt;-read.csv(urlfile)"
+  },
+  {
+    "objectID": "inclass_r/activity_r2.html#load-packages-and-data",
+    "href": "inclass_r/activity_r2.html#load-packages-and-data",
+    "title": "In Class R Activity #2/HW 3",
+    "section": "",
+    "text": "We need the following packages loaded: tidyverse, broom, and reader. As a reminder, you only need to install them once, otherwise you just need to load them by typing library(PACKAGENAME) in a chunk of code.\n\nlibrary(tidyverse)\nlibrary(readr)\nlibrary(broom)\n\nWe are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a high school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.\n\nurlfile &lt;- \"https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/inclass_r/life_exp.csv\"\n\ndf&lt;-read.csv(urlfile)"
+  },
+  {
+    "objectID": "inclass_r/activity_r2.html#q10--what-is-the-typical-error-for-this-model",
+    "href": "inclass_r/activity_r2.html#q10--what-is-the-typical-error-for-this-model",
+    "title": "In Class R Activity #2/HW 3",
+    "section": "Q10- What is the typical error for this model?",
+    "text": "Q10- What is the typical error for this model?\nBe sure to interpret it in the proper units."
+  },
+  {
+    "objectID": "inclass_r/activity_r2.html#q11--determine-whether-there-are-outliers-in-the-data",
+    "href": "inclass_r/activity_r2.html#q11--determine-whether-there-are-outliers-in-the-data",
+    "title": "In Class R Activity #2/HW 3",
+    "section": "Q11- Determine Whether there are outliers in the data",
+    "text": "Q11- Determine Whether there are outliers in the data\nVisualize the residuals to demonstrate whether there are any outliers."
+  },
+  {
+    "objectID": "inclass_r/activity_r2.html#q12--make-final-conclusions",
+    "href": "inclass_r/activity_r2.html#q12--make-final-conclusions",
+    "title": "In Class R Activity #2/HW 3",
+    "section": "Q12- Make final Conclusions",
+    "text": "Q12- Make final Conclusions\nAfter evaluating all of the conditions above, did we meet the condtions to estimate a simple regression? What is our conclusion about the relationship between education and life expectancy?"
   }
 ]
