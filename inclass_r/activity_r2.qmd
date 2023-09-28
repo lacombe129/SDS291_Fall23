@@ -1,0 +1,128 @@
+---
+title: "In Class R Activity #2/HW 3"
+author: "Due Friday, October 6th by 11:59 PM"
+format: html
+editor: visual
+---
+
+# Introduction
+
+The purpose of this lab is to practice evaluating the conditions for linear regression. We will be doing both post-and pre-estimation checks in addition to estimating a linear model.
+
+On a side note, we need to get in the habit of hiding warnings and messages while properly formatting our quarto document. Your final submission must include a .QMD and rendered PDF that hides all warnings/messages.
+
+**All figures must include at least 1-2 sentences of write up explaining what we should take away from them for full points.** Do not just say "yes, the condition is met." Include a brief explanation why.
+
+## Load Packages and Data
+
+We need the following packages loaded: `tidyverse`, `broom`, and `reader`. As a reminder, you only need to install them once, otherwise you just need to load them by typing `library(PACKAGENAME)` in a chunk of code.
+
+```{r, warning=F, message=F}
+library(tidyverse)
+library(readr)
+library(broom)
+```
+
+We are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a high school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.
+
+```{r}
+urlfile <- "https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/inclass_r/life_exp.csv"
+
+df<-read.csv(urlfile)
+```
+
+# Condition Checks- Pre Estimation
+
+It is up to you to determine how you want to check for each condition, but you need to include at least one graph/figure/descriptive statistic table for each question, and include at least 1 sentence telling us how we should interpret that graph. You can use the same figure for multiple conditions, but you must include text noting whether or not the condition is met/violated.
+
+### Q1- Is the Dependent Variable Quantitative?
+
+```{r, include=F}
+
+ggplot(df, aes(x=LifeExp))+ geom_histogram()
+```
+
+### Q2- Is the relationship linear?
+
+```{r, include=F}
+ggplot(df, aes(y=LifeExp, x=perc_college))+ geom_point()
+
+```
+
+### Q3- Is the spread constant (homoskedasticity)?
+
+# Estimate Linear Model
+
+### Q4- Estimate the linear model and interpret both the slope and intercept terms. Make sure to include specific units and note whether the coefficients are significant.
+
+```{r, include=F}
+m1 <- lm(LifeExp~perc_college, data=df)
+summary(m1)
+```
+
+# Post Estimation Condition Check
+
+### Q5 Are the residuals normally distributed?
+
+As a reminder, you have two options. Either use the `augment()` command to extract the residuals, and make a histogram of the residuals. Or us the command `plot(MODELNAME, which=2)` to produce a QQ plot. Either works
+
+```{r, include=F}
+resid <- augment(m1)
+
+ggplot(resid, aes(x=.resid))+ geom_histogram()
+```
+
+### Q6 Is there a relationship between our residuals and our error?
+
+As a reminder, you have two options. Either use the `augment()` command to extract the residuals, and make a scatterplot of the residuals and fitted values. Or us the command `plot(MODELNAME, which=1)` to produce a QQ plot. Either works.
+
+```{r, include=F}
+ggplot(resid, aes(x=.fitted, y=.resid))+ geom_point()
+
+```
+
+### Q7- Is the variance in our residuals constant?
+
+# Transforming our data
+
+Right now, the intercept is fairly non-sensical. So, to correct it let's center the data by subtracting the mean from every observation. I provided you a sample of the code needed to center the data below. Make a scatter plot with a line of best fit (add `geom_smooth(method="lm")` to your ggplot). What does a value of 0 now indicate for our IV?
+
+```{r, eval=F}
+df <- df |>
+  mutate(centered_VARNAME=VARNAME-mean(VARNAME))
+```
+
+```{r, include=F}
+df <- df |>
+  mutate(centered_college=perc_college-mean(perc_college))
+```
+
+```{r, include=F}
+ggplot(df, aes(y=LifeExp, x=centered_college))+ geom_point() + geom_smooth()
+
+```
+
+### Q8- Re-estimate the linear model with a centered IV
+
+Make sure to interpret both the slope and intercept, noting significance for each.
+
+```{r, include=F}
+m2 <- lm(LifeExp~centered_college, data=df)
+summary(m2)
+```
+
+### Q9- Interpreting other pieces of the regression table
+
+What is the t-value for the slope coefficient? What does it mean and why is it relevant for us to test the null hypothesis?
+
+## Q10- What is the typical error for this model?
+
+Be sure to interpret it in the proper units.
+
+## Q11- Determine Whether there are outliers in the data
+
+Visualize the residuals to demonstrate whether there are any outliers.
+
+## Q12- Make final Conclusions
+
+After evaluating all of the conditions above, did we meet the conditions to estimate a simple regression? What is our conclusion about the relationship between education and life expectancy?
