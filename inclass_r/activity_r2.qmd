@@ -23,7 +23,7 @@ library(readr)
 library(broom)
 ```
 
-We are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a high school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.
+We are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a college school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.
 
 ```{r}
 urlfile <- "https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/inclass_r/life_exp.csv"
