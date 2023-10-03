@@ -175,6 +175,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="https://docs.google.com/presentation/d/1OibpmC7CCYrGnkdJ1VgHxbRw2bi8QKth/edit?usp=sharing&amp;ouid=105141350110500354644&amp;rtpof=true&amp;sd=true" rel="" target="">
  <span class="dropdown-text">Week 4 Slides- Transformation, Conditions, and Inference</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="https://docs.google.com/presentation/d/1XXCTMaA49E8xQqjs28dF_8HEq-TSS_XM/edit?usp=sharing&amp;ouid=105141350110500354644&amp;rtpof=true&amp;sd=true" rel="" target="">
+ <span class="dropdown-text">Week 6 Slides- Wrapping Up Simple Regression</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -267,7 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a high school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.</p>
+<p>We are then going to load a dataset on county life expectancy and education rates. The unit of analysis is US County, the DV is life-expectancy (measured in years) and the IV is the percentage of the population with at least a college school degree. We need to include the chunk below to grab the data directly from my github page. We are saving the location to an object (urlfile) and then telling R to read in this web address as a csv file. Our research question is whether there is a relationship between education level and life expectancy.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>urlfile <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/inclass_r/life_exp.csv"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
