@@ -72,7 +72,7 @@ resid <- augment(m1)
 ggplot(resid, aes(x=.resid))+ geom_histogram()
 ```
 
-### Q6 Is there a relationship between our residuals and our error?
+### Q6 Is there a relationship between our residuals and our prediction?
 
 As a reminder, you have two options. Either use the `augment()` command to extract the residuals, and make a scatterplot of the residuals and fitted values. Or us the command `plot(MODELNAME, which=1)` to produce a QQ plot. Either works.
 

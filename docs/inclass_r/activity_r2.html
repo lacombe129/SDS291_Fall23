@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#post-estimation-condition-check" id="toc-post-estimation-condition-check" class="nav-link" data-scroll-target="#post-estimation-condition-check">Post Estimation Condition Check</a>
   <ul class="collapse">
   <li><a href="#q5-are-the-residuals-normally-distributed" id="toc-q5-are-the-residuals-normally-distributed" class="nav-link" data-scroll-target="#q5-are-the-residuals-normally-distributed">Q5 Are the residuals normally distributed?</a></li>
-  <li><a href="#q6-is-there-a-relationship-between-our-residuals-and-our-error" id="toc-q6-is-there-a-relationship-between-our-residuals-and-our-error" class="nav-link" data-scroll-target="#q6-is-there-a-relationship-between-our-residuals-and-our-error">Q6 Is there a relationship between our residuals and our error?</a></li>
+  <li><a href="#q6-is-there-a-relationship-between-our-residuals-and-our-prediction" id="toc-q6-is-there-a-relationship-between-our-residuals-and-our-prediction" class="nav-link" data-scroll-target="#q6-is-there-a-relationship-between-our-residuals-and-our-prediction">Q6 Is there a relationship between our residuals and our prediction?</a></li>
   <li><a href="#q7--is-the-variance-in-our-residuals-constant" id="toc-q7--is-the-variance-in-our-residuals-constant" class="nav-link" data-scroll-target="#q7--is-the-variance-in-our-residuals-constant">Q7- Is the variance in our residuals constant?</a></li>
   </ul></li>
   <li><a href="#transforming-our-data" id="toc-transforming-our-data" class="nav-link" data-scroll-target="#transforming-our-data">Transforming our data</a>
@@ -300,8 +300,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="q5-are-the-residuals-normally-distributed">Q5 Are the residuals normally distributed?</h3>
 <p>As a reminder, you have two options. Either use the <code>augment()</code> command to extract the residuals, and make a histogram of the residuals. Or us the command <code>plot(MODELNAME, which=2)</code> to produce a QQ plot. Either works</p>
 </section>
-<section id="q6-is-there-a-relationship-between-our-residuals-and-our-error" class="level3">
-<h3 class="anchored" data-anchor-id="q6-is-there-a-relationship-between-our-residuals-and-our-error">Q6 Is there a relationship between our residuals and our error?</h3>
+<section id="q6-is-there-a-relationship-between-our-residuals-and-our-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="q6-is-there-a-relationship-between-our-residuals-and-our-prediction">Q6 Is there a relationship between our residuals and our prediction?</h3>
 <p>As a reminder, you have two options. Either use the <code>augment()</code> command to extract the residuals, and make a scatterplot of the residuals and fitted values. Or us the command <code>plot(MODELNAME, which=1)</code> to produce a QQ plot. Either works.</p>
 </section>
 <section id="q7--is-the-variance-in-our-residuals-constant" class="level3">
