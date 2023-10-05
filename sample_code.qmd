@@ -20,5 +20,7 @@ The following links will take you to R code and data used for class or lecture.
 
 1. [Code used for lecture slides](https://drive.google.com/file/d/1XY5ELk_NqsEEKFHBUqr8KgcizcZ7mtl2/view?usp=sharing)
 
+2. [Intro to Multiple Regression](https://drive.google.com/file/d/1YwTTmpd57JAfKSgLSOTDjOAPKPc_Blez/view?usp=sharing)
+
 
 
