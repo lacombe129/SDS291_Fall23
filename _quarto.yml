@@ -37,6 +37,8 @@ website:
           text: Week 4 Slides- Transformation, Conditions, and Inference  
         - href: https://docs.google.com/presentation/d/1XXCTMaA49E8xQqjs28dF_8HEq-TSS_XM/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
           text: Week 5 Slides- Wrapping Up Simple Regression   
+        - href: https://docs.google.com/presentation/d/1fKX0FjtpH0P7ILIseUFsOW3-nYz30b1w/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
+          text: Week 6 Slides- Multiple Regression 1 
       - text: Sample Code and R- Activities
         href: sample_code.qmd
 

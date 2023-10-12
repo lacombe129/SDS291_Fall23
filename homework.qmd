@@ -24,5 +24,8 @@ All homeworks are due at 11:59 PM on the following Friday after they are assigne
     -   General Guidelines for [Case Studies](inclass_r/case-study-guidelines.pdf)
     -   [Case Study 1 Instructions](inclass_r/case_study_1.pdf)
     -   Template [QMD File](https://drive.google.com/file/d/1ar46GoIDPMH05bI5l5jfYQLlOjFfgKwC/view?usp=sharing)
+    
+5.  Due Friday, October 20th
+    -   2.18, 2.21, 2.22, 2.35, 3.2, 3.17 (**pay attention to the sample size and confidence level**), 3.26
 
     
