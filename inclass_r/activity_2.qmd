@@ -1,0 +1,35 @@
+---
+title: "In-class R assignment #2"
+date: "Due Sunday October 15th End of Day"
+---
+
+## Intro
+
+Your task is to estimate a model predicting the list price (`list_price`) of books on amazon using the number of pages (`num_pages`) and type of book (`hard_paper`). You will be estimating two models, one with parallel slopes, and one with an interaction between the two variables. You will need the `tidyverse` and `moderndive` packages loaded. Note I am assuming you are checking for the conditions of regression to be met, but they should **not** be included in the write up. 
+
+```{r, message=F, warning=F}
+library(tidyverse)
+library(moderndive)
+
+df <- moderndive::amazon_books
+```
+
+
+### 1. Estimate Parallel Slopes model
+Produce the regression table, no interpretation needed yet.
+
+
+
+### 2. Produce a scatter plot of the relationship between the number of pages and list price with the grouping variable being type of book (hard/paper)
+
+
+### 3. Estimate an interaction model between type of book and number of pages
+Produce the regression table, no interpretation needed yet.
+
+### 4. Interpret the following pieces of the regression model:
+
+1. Intercept
+2. Slope coefficients (both the base terms and interaction)
+3. Adjusted r-squared
+4. F-statistic
+5. What can we conclude about the relationship between book type and number of pages, and the listing price of a book? Is there a significant interaction? 
