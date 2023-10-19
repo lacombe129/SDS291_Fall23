@@ -29,5 +29,7 @@ The following links will take you to R code and data used for class or lecture.
 
 2. **Due Sunday October 22nd**[In-Class R Activity 2](inclass_r/in_class_r_2.html) 
 
+3. **Mid-term List of Concepts** [here](lectures/Midterm_list_of_concepts.docx)
+
 
 
