@@ -95,7 +95,7 @@
     "href": "sample_code.html",
     "title": "Sample R Code and R Activities",
     "section": "",
-    "text": "The following links will take you to R code and data used for class or lecture.\n\nWeek 2 and 3 - Simple Linear Regression\n\nsimple_regression.qmd\nDue Sunday, Sept 17th by 11:59 PM on Moodle: Read and complete this R-Activity #1\n\n\n\nWeek 4- Regression Conditions and Transformation\n\nCode used for lecture slides\n\n\n\nWeek 5- Wrapping up Simple Regression and Intro to Multiple Regression\n\nCode used for lecture slides\n\n\n\nWeek 6- Multiple Regression\n\nIntro to Multiple Regression\nIn class R assignment Due Sunday October 15th instructions\n\n\n\nWeek 7- Multiple Regression 2\n\nPractice with Interactions"
+    "text": "The following links will take you to R code and data used for class or lecture.\n\nWeek 2 and 3 - Simple Linear Regression\n\nsimple_regression.qmd\nDue Sunday, Sept 17th by 11:59 PM on Moodle: Read and complete this R-Activity #1\n\n\n\nWeek 4- Regression Conditions and Transformation\n\nCode used for lecture slides\n\n\n\nWeek 5- Wrapping up Simple Regression and Intro to Multiple Regression\n\nCode used for lecture slides\n\n\n\nWeek 6- Multiple Regression\n\nIntro to Multiple Regression\n\n\n\nWeek 7- Multiple Regression 2\n\nPractice with Interactions\nDue Sunday October 22ndIn-Class R Activity 2"
   },
   {
     "objectID": "mp_1.html#assessment-criteria",
@@ -292,5 +292,54 @@
     "title": "In-class R assignment #2",
     "section": "",
     "text": "Your task is to estimate a model predicting the list price (list_price) of books on amazon using the number of pages (num_pages) and type of book (hard_paper). You will be estimating two models, one with parallel slopes, and one with an interaction between the two variables. You will need the tidyverse and moderndive packages loaded. Note I am assuming you are checking for the conditions of regression to be met, but they should not be included in the write up.\n\nlibrary(tidyverse)\nlibrary(moderndive)\n\ndf &lt;- moderndive::amazon_books\n\n\n\nProduce the regression table, no interpretation needed yet.\n\n\n\n\n\n\nProduce the regression table, no interpretation needed yet.\n\n\n\n\nIntercept\nSlope coefficients (both the base terms and interaction)\nAdjusted r-squared\nF-statistic\nWhat can we conclude about the relationship between book type and number of pages, and the listing price of a book? Is there a significant interaction?"
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html",
+    "href": "inclass_r/in_class_r_2.html",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "Just as in previous assignments, you are expected to complete this activity and submit both your QMD and PDF. Note, these data are simulated.\nThe expectation for this assignment is for full points you hide all code, warning messages, and error messages. I only want to see output, figures, headings, tables, and text (no need to format the table for this lab, but we will start doing in the future). I only want the figures/tables I ask for, so do not include any extra graphs of conditions or other pieces of information.\nFor this in-class R activity we will be estimating whether the type of book (kindle/paperback) and length of a book (number of pages) is related to its price (measured in dollars).\n\nlibrary(tidyverse)\nlibrary(moderndive)\nlibrary(readr)\n\n\n## read in dataset from github\nurl &lt;- \"https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/labs/book_data.csv.csv\"\n\ndf &lt;- read_csv(url)\n\n\n\nThe sample code below gives you a model, where color represents the categorical variable. Do not add any lines of best fit yet. Do you notice anything about the relationship? Does it appear linear?\n\nggplot(df, aes(x=INDEPENDENT_VAR, y=DEPENDENT_VAR, color=CAT_VAR))+geom_point()\n\n\n\n\nUse the geom_parallel_slopes() command from the moderndive package to produce the same scatter plot as above, with the additional parallel lines of best fit. Do these lines do a good job summarizing the relationship for each group?\n\n\n\nInstead of using geom_parallel_slopes(), if we use geom_smooth(method=\"lm\"), we can visualize the slopes for each type of book separately. Does it appear the slopes are parallel? Summarize the relationship (positive, negative, 0) between number of pages and price for each type of book?\n\n\n\nNo other interpretation of the model needed outside of interpreting the term for the shift in intercept.\n\n\n\nInterpret the slope term and the interaction. Are the results consistent with what we visualized in question 3?\n\n\n\nUse the command anova(modelname) to generate the anova results from our model used in Question 5. What is the total sum of squared variation in our dependent variable? What is our sum of squared errors? Use these values to calculate the r-squared. Does this match what was reported in the regression table? Interpret this number."
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html#make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book",
+    "href": "inclass_r/in_class_r_2.html#make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "The sample code below gives you a model, where color represents the categorical variable. Do not add any lines of best fit yet. Do you notice anything about the relationship? Does it appear linear?\n\nggplot(df, aes(x=INDEPENDENT_VAR, y=DEPENDENT_VAR, color=CAT_VAR))+geom_point()"
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html#visualize-a-parallel-slopes-model.",
+    "href": "inclass_r/in_class_r_2.html#visualize-a-parallel-slopes-model.",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "Use the geom_parallel_slopes() command from the moderndive package to produce the same scatter plot as above, with the additional parallel lines of best fit. Do these lines do a good job summarizing the relationship for each group?"
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html#visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel",
+    "href": "inclass_r/in_class_r_2.html#visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "Instead of using geom_parallel_slopes(), if we use geom_smooth(method=\"lm\"), we can visualize the slopes for each type of book separately. Does it appear the slopes are parallel? Summarize the relationship (positive, negative, 0) between number of pages and price for each type of book?"
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html#estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount",
+    "href": "inclass_r/in_class_r_2.html#estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "No other interpretation of the model needed outside of interpreting the term for the shift in intercept."
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html#estimate-a-model-with-an-interaction-between-type-of-number-of-pages.",
+    "href": "inclass_r/in_class_r_2.html#estimate-a-model-with-an-interaction-between-type-of-number-of-pages.",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "Interpret the slope term and the interaction. Are the results consistent with what we visualized in question 3?"
+  },
+  {
+    "objectID": "inclass_r/in_class_r_2.html#calculate-the-r-squared-manually",
+    "href": "inclass_r/in_class_r_2.html#calculate-the-r-squared-manually",
+    "title": "In Class R Activity #2",
+    "section": "",
+    "text": "Use the command anova(modelname) to generate the anova results from our model used in Question 5. What is the total sum of squared variation in our dependent variable? What is our sum of squared errors? Use these values to calculate the r-squared. Does this match what was reported in the regression table? Interpret this number."
   }
 ]
