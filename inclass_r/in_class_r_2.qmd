@@ -1,0 +1,63 @@
+---
+title: "In Class R Activity #2"
+subtitle: "Due Sunday, October 22nd 11:59 PM"
+format: html
+editor: visual
+---
+
+# Introduction
+
+Just as in previous assignments, you are expected to complete this activity and submit both your QMD and PDF. Note, **these data are simulated**.
+
+The expectation for this assignment is for full points you **hide all code, warning messages, and error messages**. I only want to see output, figures, headings, tables, and text (no need to format the table for this lab, but we will start doing in the future). I only want the figures/tables I ask for, so do not include any extra graphs of conditions or other pieces of information.
+
+For this in-class R activity we will be estimating whether the type of book (kindle/paperback) and length of a book (number of pages) is related to its price (measured in dollars).
+
+```{r, warning=F, message=F}
+library(tidyverse)
+library(moderndive)
+library(readr)
+```
+
+```{r, message=F, warning=F}
+## read in dataset from github
+url <- "https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/labs/book_data.csv.csv"
+
+df <- read_csv(url)
+```
+
+## 1. Make a scatter plot for the relationship between num_pages and price, with points colored by type of book
+
+The sample code below gives you a model, where `color` represents the categorical variable. Do not add any lines of best fit yet. Do you notice anything about the relationship? Does it appear linear?
+
+```{r, eval=F}
+
+ggplot(df, aes(x=INDEPENDENT_VAR, y=DEPENDENT_VAR, color=CAT_VAR))+geom_point()
+```
+
+## 2. Visualize a parallel slopes model.
+
+Use the `geom_parallel_slopes()` command from the `moderndive` package to produce the same scatter plot as above, with the additional parallel lines of best fit. Do these lines do a good job summarizing the relationship for each group?
+
+```{r, include=F}
+
+ggplot(df, aes(x=num_pages, y=price, color=type))+geom_point()+ geom_parallel_slopes()
+```
+
+## 3. Visualize the same relationship, but without assuming the slopes are parallel
+
+Instead of using `geom_parallel_slopes()`, if we use `geom_smooth(method="lm")`, we can visualize the slopes for each type of book separately. Does it appear the slopes are parallel? Summarize the relationship (positive, negative, 0) between number of pages and price for each type of book?
+
+## 4. Estimate a parallel slopes model. Do paperbacks and kindle books cost the same amount?
+
+No other interpretation of the model needed outside of interpreting the term for the shift in intercept.
+
+## 5. Estimate a model with an interaction between type of number of pages.
+
+Interpret the slope term and the interaction. Are the results consistent with what we visualized in question 3?
+
+## 6. Calculate the R-Squared Manually
+
+Use the command `anova(modelname)` to generate the anova results from our model used in Question 5. What is the total sum of squared variation in our dependent variable? What is our sum of squared errors? Use these values to calculate the r-squared. Does this match what was reported in the regression table? Interpret this number.
+
+## 7. What can we conclude about how the length of a book and type (kindle/vs paper back) are related to its listing price?

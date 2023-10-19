@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SDS291 - R Assignment #1</title>
+<title>SDS291 - In Class R Activity #2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -210,27 +210,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#loading-packages" id="toc-loading-packages" class="nav-link" data-scroll-target="#loading-packages">Loading Packages</a></li>
-  <li><a href="#loading-data" id="toc-loading-data" class="nav-link" data-scroll-target="#loading-data">Loading Data</a></li>
-  <li><a href="#summary-statistics-of-key-variables" id="toc-summary-statistics-of-key-variables" class="nav-link" data-scroll-target="#summary-statistics-of-key-variables">Summary Statistics of Key variables</a>
-  <ul class="collapse">
-  <li><a href="#question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table" id="toc-question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table" class="nav-link" data-scroll-target="#question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table">Question 1: Use the sample chunk code above to calculate the descriptive statistics for the variable “Size” and include a brief write up interpreting the table</a></li>
+  <li><a href="#make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book" id="toc-make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book" class="nav-link" data-scroll-target="#make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book">1. Make a scatter plot for the relationship between num_pages and price, with points colored by type of book</a></li>
+  <li><a href="#visualize-a-parallel-slopes-model." id="toc-visualize-a-parallel-slopes-model." class="nav-link" data-scroll-target="#visualize-a-parallel-slopes-model.">2. Visualize a parallel slopes model.</a></li>
+  <li><a href="#visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel" id="toc-visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel" class="nav-link" data-scroll-target="#visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel">3. Visualize the same relationship, but without assuming the slopes are parallel</a></li>
+  <li><a href="#estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount" id="toc-estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount" class="nav-link" data-scroll-target="#estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount">4. Estimate a parallel slopes model. Do paperbacks and kindle books cost the same amount?</a></li>
+  <li><a href="#estimate-a-model-with-an-interaction-between-type-of-number-of-pages." id="toc-estimate-a-model-with-an-interaction-between-type-of-number-of-pages." class="nav-link" data-scroll-target="#estimate-a-model-with-an-interaction-between-type-of-number-of-pages.">5. Estimate a model with an interaction between type of number of pages.</a></li>
+  <li><a href="#calculate-the-r-squared-manually" id="toc-calculate-the-r-squared-manually" class="nav-link" data-scroll-target="#calculate-the-r-squared-manually">6. Calculate the R-Squared Manually</a></li>
+  <li><a href="#what-can-we-conclude-about-how-the-length-of-a-book-and-type-kindlevs-paper-back-are-related-to-its-listing-price" id="toc-what-can-we-conclude-about-how-the-length-of-a-book-and-type-kindlevs-paper-back-are-related-to-its-listing-price" class="nav-link" data-scroll-target="#what-can-we-conclude-about-how-the-length-of-a-book-and-type-kindlevs-paper-back-are-related-to-its-listing-price">7. What can we conclude about how the length of a book and type (kindle/vs paper back) are related to its listing price?</a></li>
   </ul></li>
-  <li><a href="#histogram-of-key-variable" id="toc-histogram-of-key-variable" class="nav-link" data-scroll-target="#histogram-of-key-variable">Histogram of Key Variable</a>
-  <ul class="collapse">
-  <li><a href="#question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable." id="toc-question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable." class="nav-link" data-scroll-target="#question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable.">Question 2: Using the sample code above as a model, make a histogram of the size variable.</a></li>
-  </ul></li>
-  <li><a href="#linearity-condition" id="toc-linearity-condition" class="nav-link" data-scroll-target="#linearity-condition">Linearity condition</a>
-  <ul class="collapse">
-  <li><a href="#question-3--construct-a-scatter-plot" id="toc-question-3--construct-a-scatter-plot" class="nav-link" data-scroll-target="#question-3--construct-a-scatter-plot">Question 3- Construct a scatter plot</a></li>
-  </ul></li>
-  <li><a href="#linear-model" id="toc-linear-model" class="nav-link" data-scroll-target="#linear-model">Linear Model</a>
-  <ul class="collapse">
-  <li><a href="#question-4--estimate-a-linear-model" id="toc-question-4--estimate-a-linear-model" class="nav-link" data-scroll-target="#question-4--estimate-a-linear-model">Question 4- Estimate a linear Model</a></li>
-  <li><a href="#question-5--interpret-the-model" id="toc-question-5--interpret-the-model" class="nav-link" data-scroll-target="#question-5--interpret-the-model">Question 5- Interpret the Model</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#turn-in-report" id="toc-turn-in-report" class="nav-link" data-scroll-target="#turn-in-report">Turn in report</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +226,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R Assignment #1</h1>
+<h1 class="title">In Class R Activity #2</h1>
+<p class="subtitle lead">Due Sunday, October 22nd 11:59 PM</p>
 </div>
 
 
@@ -256,124 +244,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>For this lab you will be estimating a simple regression to model the relationship between the size of a house (in 1,000s of square feet) and the price (in $1,000’s) for houses in Canton NY. The dataset is built into the ‘Stat2Data’ package, so make sure you load it into a chunk in R. As always, you first need to load packages. Load tidyverse, Stat2Data, and ggplot2. The lab must be written in Quarto/Rmarkdown and turned in as a .QMD and .HTML (or pdf) file. This is designed to be finished during class time, but you have until Sunday, September 17th (11:59 PM).</p>
-<p>I’ve included some sample code but removed some variable/object names to force you to customize it to work. Make sure you turn in your own, unique lab assignment, but you are encouraged to collaborate in groups to work on the lab. Remember all code should be in chunks, sections labeled with headings, and text written in white space.</p>
-<section id="loading-packages" class="level2">
-<h2 class="anchored" data-anchor-id="loading-packages">Loading Packages</h2>
+<p>Just as in previous assignments, you are expected to complete this activity and submit both your QMD and PDF. Note, <strong>these data are simulated</strong>.</p>
+<p>The expectation for this assignment is for full points you <strong>hide all code, warning messages, and error messages</strong>. I only want to see output, figures, headings, tables, and text (no need to format the table for this lab, but we will start doing in the future). I only want the figures/tables I ask for, so do not include any extra graphs of conditions or other pieces of information.</p>
+<p>For this in-class R activity we will be estimating whether the type of book (kindle/paperback) and length of a book (number of pages) is related to its price (measured in dollars).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Stat2Data)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moderndive)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="loading-data" class="level2">
-<h2 class="anchored" data-anchor-id="loading-data">Loading Data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(HousesNY)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="do">### IF you want to learn more about the dataset</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>?HousesNY</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## read in dataset from github</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/lacombe129/SDS291_Fall23/main/labs/book_data.csv.csv"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="summary-statistics-of-key-variables" class="level2">
-<h2 class="anchored" data-anchor-id="summary-statistics-of-key-variables">Summary Statistics of Key variables</h2>
-<p>Before you ever begin analyzing data, you need to check the data to make sure it measures what you think you think it is, and check for outliers, potential errors, or other properties of each variable. The most basic form of that is to estimate basic descriptive statistics. The below code takes the descriptive statistics for the <code>Price</code> variable from our <code>HouseNY</code> dataframe and constructs a table with the mean, sd, min, max, and number of observations.</p>
+<section id="make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book" class="level2">
+<h2 class="anchored" data-anchor-id="make-a-scatter-plot-for-the-relationship-between-num_pages-and-price-with-points-colored-by-type-of-book">1. Make a scatter plot for the relationship between num_pages and price, with points colored by type of book</h2>
+<p>The sample code below gives you a model, where <code>color</code> represents the categorical variable. Do not add any lines of best fit yet. Do you notice anything about the relationship? Does it appear linear?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>HousesNY <span class="sc">|&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_price=</span><span class="fu">mean</span>(Price), <span class="at">sd_price=</span><span class="fu">sd</span>(Price), <span class="at">min_price=</span><span class="fu">min</span>(Price), <span class="at">max_price=</span><span class="fu">max</span>(Price), <span class="at">sample_size=</span><span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  mean_price sd_price min_price max_price sample_size
-1   113.6321 41.43006      38.5     197.5          53</code></pre>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x=</span>INDEPENDENT_VAR, <span class="at">y=</span>DEPENDENT_VAR, <span class="at">color=</span>CAT_VAR))<span class="sc">+</span><span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<section id="question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table" class="level3">
-<h3 class="anchored" data-anchor-id="question-1-use-the-sample-chunk-code-above-to-calculate-the-descriptive-statistics-for-the-variable-size-and-include-a-brief-write-up-interpreting-the-table">Question 1: Use the sample chunk code above to calculate the descriptive statistics for the variable “Size” and include a brief write up interpreting the table</h3>
-<p>In particular, note if the values make sense (are there any negative ones, really high/low values, etc). 2-3 sentences should suffice.</p>
 </section>
+<section id="visualize-a-parallel-slopes-model." class="level2">
+<h2 class="anchored" data-anchor-id="visualize-a-parallel-slopes-model.">2. Visualize a parallel slopes model.</h2>
+<p>Use the <code>geom_parallel_slopes()</code> command from the <code>moderndive</code> package to produce the same scatter plot as above, with the additional parallel lines of best fit. Do these lines do a good job summarizing the relationship for each group?</p>
 </section>
-<section id="histogram-of-key-variable" class="level2">
-<h2 class="anchored" data-anchor-id="histogram-of-key-variable">Histogram of Key Variable</h2>
-<p>While descriptive statistics are useful, it’s also incredibly helpful to plot the data to get a better idea for the distribution of observations. Histograms can help us see if there are outlier, and get an understanding if the variable is actually continuous or not. The sample code below makes a histogram for the price variable.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HousesNY, <span class="fu">aes</span>(<span class="at">x=</span>Price))<span class="sc">+</span> <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="activity_r_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<section id="question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable." class="level3">
-<h3 class="anchored" data-anchor-id="question-2-using-the-sample-code-above-as-a-model-make-a-histogram-of-the-size-variable.">Question 2: Using the sample code above as a model, make a histogram of the size variable.</h3>
-<p>Make sure to include a sentence or two noting if the variable appears continuous, if there are any outliers, and any other notable observations on the measure.</p>
+<section id="visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel" class="level2">
+<h2 class="anchored" data-anchor-id="visualize-the-same-relationship-but-without-assuming-the-slopes-are-parallel">3. Visualize the same relationship, but without assuming the slopes are parallel</h2>
+<p>Instead of using <code>geom_parallel_slopes()</code>, if we use <code>geom_smooth(method="lm")</code>, we can visualize the slopes for each type of book separately. Does it appear the slopes are parallel? Summarize the relationship (positive, negative, 0) between number of pages and price for each type of book?</p>
 </section>
+<section id="estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount" class="level2">
+<h2 class="anchored" data-anchor-id="estimate-a-parallel-slopes-model.-do-paperbacks-and-kindle-books-cost-the-same-amount">4. Estimate a parallel slopes model. Do paperbacks and kindle books cost the same amount?</h2>
+<p>No other interpretation of the model needed outside of interpreting the term for the shift in intercept.</p>
 </section>
-<section id="linearity-condition" class="level2">
-<h2 class="anchored" data-anchor-id="linearity-condition">Linearity condition</h2>
-<p>We can use a scatter plot to check to see if the relationship is linear or not. The sample code below makes a scatter plot between the a property’s lot size (in acres) and price. <code>geom_point</code> tells R that the ggplot should be a scatter plot. It looks like there is no clear pattern or relationship in the data.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HousesNY, <span class="fu">aes</span>(<span class="at">x=</span>Lot, <span class="at">y=</span>Price))<span class="sc">+</span> <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="activity_r_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>We can add a line of best fit by adding the command <code>geom_smooth</code> to our gpplot (see below). We add the instructions <code>method="lm"</code> to tell R to force the function to be linear (a straight line). Notice the line is essentially flat, which would indicate no relationship.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HousesNY, <span class="fu">aes</span>(<span class="at">x=</span>Lot, <span class="at">y=</span>Price))<span class="sc">+</span> <span class="fu">geom_point</span>() <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="activity_r_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<section id="question-3--construct-a-scatter-plot" class="level3">
-<h3 class="anchored" data-anchor-id="question-3--construct-a-scatter-plot">Question 3- Construct a scatter plot</h3>
-<p>Make a scatter plot between size and price. Include a line of best fit (make it linear). Include a brief description of what you observe. Is the slope negative/positive? Does it look roughly linear? etc.</p>
+<section id="estimate-a-model-with-an-interaction-between-type-of-number-of-pages." class="level2">
+<h2 class="anchored" data-anchor-id="estimate-a-model-with-an-interaction-between-type-of-number-of-pages.">5. Estimate a model with an interaction between type of number of pages.</h2>
+<p>Interpret the slope term and the interaction. Are the results consistent with what we visualized in question 3?</p>
 </section>
+<section id="calculate-the-r-squared-manually" class="level2">
+<h2 class="anchored" data-anchor-id="calculate-the-r-squared-manually">6. Calculate the R-Squared Manually</h2>
+<p>Use the command <code>anova(modelname)</code> to generate the anova results from our model used in Question 5. What is the total sum of squared variation in our dependent variable? What is our sum of squared errors? Use these values to calculate the r-squared. Does this match what was reported in the regression table? Interpret this number.</p>
 </section>
-<section id="linear-model" class="level2">
-<h2 class="anchored" data-anchor-id="linear-model">Linear Model</h2>
-<p>We will get to the other conditions later, but for now we decide to estimate a linear model. The sample code below tells are to estimate a linear model (lm) with the dependent variable being Price, and independent variable Lot. We need to tell R to use our dataframe, and save the results into an object. When we summarize that object, we can see the regression table.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(Price<span class="sc">~</span>Lot, <span class="at">data=</span>HousesNY)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = Price ~ Lot, data = HousesNY)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--74.775 -30.201  -5.941  27.070  83.984 
-
-Coefficients:
-            Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) 114.0911     8.3639  13.641   &lt;2e-16 ***
-Lot          -0.5749     7.6113  -0.076     0.94    
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 41.83 on 51 degrees of freedom
-Multiple R-squared:  0.0001119, Adjusted R-squared:  -0.01949 
-F-statistic: 0.005705 on 1 and 51 DF,  p-value: 0.9401</code></pre>
-</div>
-</div>
-<section id="question-4--estimate-a-linear-model" class="level3">
-<h3 class="anchored" data-anchor-id="question-4--estimate-a-linear-model">Question 4- Estimate a linear Model</h3>
-<p>Using the sample code above, estimate a linear model between size and price and summarize the results.</p>
-</section>
-<section id="question-5--interpret-the-model" class="level3">
-<h3 class="anchored" data-anchor-id="question-5--interpret-the-model">Question 5- Interpret the Model</h3>
-<p>Is there a relationship between housing size and price? Note whether the relationship is positive or negative, and if the relationship is statistically signficant. Include a sentence interpeting the intercept, and one interpreting the coefficient for “size.” What can we conclude about the influence of house size on price?</p>
-<p>Note, pay careful attention to your units!</p>
-</section>
-</section>
-</section>
-<section id="turn-in-report" class="level1">
-<h1>Turn in report</h1>
-<p>Once you have finished, turn in your QMD file and rendered report onto Moodle.</p>
+<section id="what-can-we-conclude-about-how-the-length-of-a-book-and-type-kindlevs-paper-back-are-related-to-its-listing-price" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-we-conclude-about-how-the-length-of-a-book-and-type-kindlevs-paper-back-are-related-to-its-listing-price">7. What can we conclude about how the length of a book and type (kindle/vs paper back) are related to its listing price?</h2>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
