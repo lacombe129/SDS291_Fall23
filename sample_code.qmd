@@ -32,4 +32,6 @@ The following links will take you to R code and data used for class or lecture.
 3. **Mid-term List of Concepts** [here](lectures/Midterm_list_of_concepts.docx)
 
 
+# Week 8- Multiple Regression 3
+1. [Multiple Regression 3](https://drive.google.com/file/d/1lnrrq_evhbdccWDl3Tao7UulNqRTc1ZR/view?usp=sharing)
 
