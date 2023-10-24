@@ -41,6 +41,10 @@ website:
           text: Week 6 Slides- Multiple Regression 1 
         - href: https://docs.google.com/presentation/d/1hTZuCJhqWXKieIWyZGdaEWCiUHL7xA7u/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
           text: Week 7 Slides- Multiple Regression 2
+        - href: https://docs.google.com/presentation/d/1lxk_TFBVqNitKJ8PHXWhdfx7IWXhMcHI/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
+          text: Week 8 Slides- Multiple Regression 3  
+          
+          
       - text: Sample Code and R- Activities
         href: sample_code.qmd
 
