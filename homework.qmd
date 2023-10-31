@@ -19,13 +19,11 @@ All homeworks are due at 11:59 PM on the following Friday after they are assigne
 3.  Due Friday, October 6th
     -   Regression practice- combined with in class R Time
     -   Read and complete [R Activity for Homework 3](inclass_r/activity_r2.html)
-    
 4.  Due Friday, October 13th- **Case Study 1**
     -   General Guidelines for [Case Studies](inclass_r/case-study-guidelines.pdf)
     -   [Case Study 1 Instructions](inclass_r/case_study_1.pdf)
     -   Template [QMD File](https://drive.google.com/file/d/1ar46GoIDPMH05bI5l5jfYQLlOjFfgKwC/view?usp=sharing)
-    
 5.  Due Friday, October 20th
     -   2.18, 2.21, 2.22, 2.35, 3.2, 3.17 (**pay attention to the sample size and confidence level**), 3.26
-
-    
+6.  Due Friday, November 10th
+    -   [Case Study 2 Instructions](inclass_r/case_study_2.pdf)
