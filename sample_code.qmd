@@ -40,4 +40,12 @@ The following links will take you to R code and data used for class or lecture.
 1. [sample code](https://drive.google.com/file/d/1n2kaG21glbHVlGNG7F6oRJ0cfHR4wUVA/view?usp=sharing)
 
 
+# Week 10- Goodness of fit and model selection
+
+1. [Making Regression Tables/Summary Stats](https://drive.google.com/file/d/103v77qS8gIFSnCDYen7-IppLwImMnzu9/view?usp=sharing)
+
+
+2. [Week 10 Sample Code](https://drive.google.com/file/d/1rW-EDuhCr9siKkQqITxMTpmXz9DMzIhg/view?usp=sharing)
+
+
 
