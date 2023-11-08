@@ -27,3 +27,14 @@ All homeworks are due at 11:59 PM on the following Friday after they are assigne
     -   2.18, 2.21, 2.22, 2.35, 3.2, 3.17 (**pay attention to the sample size and confidence level**), 3.26
 6.  Due Friday, November 10th
     -   [Case Study 2 Instructions](inclass_r/case_study_2.pdf)
+
+7. Due Friday, November 17th
+    - 4.2 (a & b only), 4.7, 4.8, 4.9, 4.20 (a-d only)
+    - see sample code below for splitting up the data for 4.8
+```{r, eval=F}
+data(CountyHealth)
+
+train = CountyHealth[1:35,]
+test =CountyHealth[36:53,]
+```
+  
