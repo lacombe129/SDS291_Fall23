@@ -38,3 +38,5 @@ train = CountyHealth[1:35,]
 test =CountyHealth[36:53,]
 ```
   
+7. Due December 1st
+    - 9.1, 9.3, 9.11, 9.21, 9.22, 9.39
