@@ -49,6 +49,8 @@ website:
           text: Week 10 Slides- Goodness of fit and Model Selection  
         - href: https://docs.google.com/presentation/d/1vW47CeCUIB3x_PqTQLWRlTcfqH5cAZ15/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
           text: Week 11 Slides- Logistic Regression
+        - href: https://docs.google.com/presentation/d/1-2e4gjkkgysUNo5HbXRe81ui6X3qwRUR/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
+          text: Week 13 Slides- Logistic Regression 2
       - text: Sample Code and R- Activities
         href: sample_code.qmd
 
