@@ -54,8 +54,16 @@ The following links will take you to R code and data used for class or lecture.
 
 # Week 12- Citations
 
-1. [sample code](https://drive.google.com/drive/folders/1y6SV-_5AqKqf2OaP2SoQ-Te6xmfZv2yS?usp=sharing) 
+1. [sample code](https://drive.google.com/file/d/1xPtd0e1C3azcED-v7L4YBGDUct57-pnp/view?usp=sharing) 
 
-2. **Exam 2 List of Concepts** [here](lectures/Exam2_concepts.docx)
+2. [Bib-Tex File](https://drive.google.com/file/d/1xQCrT8zeyaeCtx7prTSikkLRV1FiP6zg/view?usp=sharing)
+
+3. **Exam 2 List of Concepts** [here](lectures/Exam2_concepts.docx)
+
+
+# Week 13- Logistic Regression Continued
+
+1. [sample code]()
+
 
 
