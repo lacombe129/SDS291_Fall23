@@ -64,6 +64,9 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    embed-resources: true
+    code-background: true
+
 
 editor: visual
 
