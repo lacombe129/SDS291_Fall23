@@ -42,4 +42,4 @@ test =CountyHealth[36:53,]
     - 9.1, 9.3, 9.11, 9.21, 9.22, 9.39
     
 6.  Due Thursday, December14th
-    -   [Case Study 3](inclass_r/case_study_3.qmd)
+    -   [Case Study 3](https://drive.google.com/file/d/10-6V9iQMWoICWKoZUCwaof7wSY11VSai/view?usp=sharing)
