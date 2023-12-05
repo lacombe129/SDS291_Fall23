@@ -68,7 +68,7 @@ The following links will take you to R code and data used for class or lecture.
 2. [Review Session Code](https://drive.google.com/file/d/105osTEG06VwNM4R0y_JQdQZLK1wjfeso/view?usp=sharing)
 
 # Week 14- Wrapping up Logistic Regression
-1. [sample code](https://drive.google.com/file/d/105osTEG06VwNM4R0y_JQdQZLK1wjfeso/view?usp=sharing)
+1. [sample code](https://drive.google.com/file/d/11OOzp7SuoXp1YVlv7omqsJb_zQGKNuFN/view?usp=sharing)
 2. [sample final project 1](lectures/sample_project1.pdf)
 3. [sample final project 2](lectures/sample_project2.pdf)
 
