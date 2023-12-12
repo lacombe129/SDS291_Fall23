@@ -30,7 +30,7 @@ All homeworks are due at 11:59 PM on the following Friday after they are assigne
 
 7. Due Friday, November 17th
     - 4.2 (a & b only), 4.7, 4.8, 4.9, 4.20 (a-d only)
-    - see sample code below for splitting up the data for 4.8
+    - see sample code below for splitting up the data on 4.8
 ```{r, eval=F}
 data(CountyHealth)
 
