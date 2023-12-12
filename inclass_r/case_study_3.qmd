@@ -6,7 +6,6 @@ editor: visual
 
 # Introduction
 
-![Bigfoot](bigfoot.jpg){width="40%"}
 
 For your final case study, you are tasked with helping Professor LaCombe with one of his passion projects- finding Bigfoot. He has collected (fake) data on what counties have and have had Bigfoot sightings in the last year, and collected county information he feels might be helpful in determining which county he should visit. These include county population, the percentage of the population that is rural, median income, the percentage of the county that has at least a college degree, the percentage of the population that trusts the federal government at least sometimes, the percentage of a county covered by trees, and a binary indicator for whether the county has a national park.
 
