@@ -53,6 +53,8 @@ website:
           text: Week 13 Slides- Logistic Regression 2
         - href: https://docs.google.com/presentation/d/10EXvKnpZNDrZLCLIh6zffJddBOdPcBPq/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
           text: Week 14 Slides- Logistic Regression 3 and time series
+        - href: https://docs.google.com/presentation/d/149esKumch0chEAYhGhpTcqh92bDuPezz/edit?usp=sharing&ouid=105141350110500354644&rtpof=true&sd=true
+          text: Week 15 Wrapping Up
       - text: Sample Code and R- Activities
         href: sample_code.qmd
 
