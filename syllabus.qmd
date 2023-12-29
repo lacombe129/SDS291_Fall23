@@ -106,7 +106,7 @@ For every day late on the written assignments I will reduce your grade for that 
 
 ```{r, echo=FALSE}
 Grade <- c("A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E")
-Percent <- c("95-100%", "90-94%", "87-89%",	"83-86%",	"80-82%", "77-79%", "73-76%", "70-72%", "60-66%", "67-69%", "59% and below")
+Percent <- c("95-100%", "90-94%", "87-89%",	"83-86%",	"80-82%", "77-79%", "73-76%", "70-72%", "67-69%", "60-66%","59% and below")
 kable(cbind(Grade, Percent))
 ```
 
